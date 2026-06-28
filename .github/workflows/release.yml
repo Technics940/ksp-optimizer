@@ -1,0 +1,21 @@
+name: Build and Release
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet build --configuration Release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KspOptimizer
+          path: bin/Release/net472/KspOptimizer.dll
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: bin/Release/net472/KspOptimizer.dll
