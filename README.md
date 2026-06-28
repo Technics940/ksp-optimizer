@@ -1,36 +1,32 @@
 # KSP Optimizer
 
-Performance mod for Kerbal Space Program 1.12.x. One DLL, no config, press the toolbar button or F2.
+Performance mod for Kerbal Space Program 1.12.x. One DLL, no config.
 
 ## Features
 
 - **GC Stutter Fix** — Spreads garbage collection across frames instead of blocking
-- **Part Welding** — Merges 3+ identical parts (fuel tanks, struts, structural) into one physics object
+- **Part Welding** — Merges 3+ identical parts into one physics object
 - **Joint Reinforcement** — Stiffens joints on launch so you need fewer struts
 - **Adaptive Physics LOD** — Reduces physics/rendering on distant parts
 
-## Install
+## Install (easiest)
 
-### CKAN
-Search "KSP Optimizer" in CKAN, install.
+**Option 1: One-click**
+1. [Download the zip](https://github.com/Technics940/ksp-optimizer/archive/refs/heads/main.zip)
+2. Extract it
+3. Double-click `install.bat`
+4. Done — it auto-detects Steam/Epic KSP and copies the files
 
-### Manual
-1. Download `KspOptimizer.dll` from [Releases](https://github.com/YourName/ksp-optimizer/releases)
-2. Put it in `KSP/GameData/KspOptimizer/`
-3. Launch KSP
+**Option 2: CKAN**
+Search "KSP Optimizer" in CKAN, click install.
+
+**Option 3: Manual**
+Copy the `GameData/KspOptimizer` folder into your KSP install directory.
 
 ## Usage
 
 - **Toolbar button** (green square) in flight/map view — click to open settings
 - **F2** — toggle settings window
-- Toggle any feature on/off
-
-## Build
-
-```powershell
-set KSP=C:\Program Files\Epic Games\KerbalSpaceProgram\English
-dotnet build --configuration Release
-```
 
 ## License
 

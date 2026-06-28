@@ -1,0 +1,9 @@
+{
+    "NAME": "KSP Optimizer",
+    "URL": "https://github.com/yourname/ksp-optimizer",
+    "DOWNLOAD": "https://github.com/yourname/ksp-optimizer/releases",
+    "VERSION": "1.0.0",
+    "KSP_VERSION_MIN": "1.12.0",
+    "KSP_VERSION_MAX": "1.12.99",
+    "COMPATIBLE": "true"
+}
