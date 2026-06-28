@@ -15,6 +15,7 @@ if "%KSP%"=="" (
 
 if not exist "%KSP%\GameData\KspOptimizer" mkdir "%KSP%\GameData\KspOptimizer"
 copy /Y "%~dp0GameData\KspOptimizer\KspOptimizer.dll" "%KSP%\GameData\KspOptimizer\" >nul
+copy /Y "%~dp0GameData\KspOptimizer\0Harmony.dll" "%KSP%\GameData\KspOptimizer\" >nul
 copy /Y "%~dp0GameData\KspOptimizer\KSP-OPTIMIZER.version" "%KSP%\GameData\KspOptimizer\" >nul
 
 echo.
